@@ -24,6 +24,9 @@ function App() {
           <StyledLink to='/tasty-bites' relative='path'>
             Tasty Bites
           </StyledLink>
+          <StyledLink to='/tea-place' relative='path'>
+            Tea Place
+          </StyledLink>
         </StyledDivLinks>
       </StyledContainer>
     </>
