@@ -15,17 +15,17 @@ function TeaPLace() {
 
             <div className="left-col"></div>
             <div className="fern"></div>
-            <StyledHeader visible={isVisible}>
+            <StyledHeader $visible={isVisible}>
                 <a href="#" className="logo">TeaPlace</a>
                 <nav>
                     <StyledMenuBtn onClick={() => setIsVisible(true)} />
                                         
                     <ul id="nav">
-                        <li className="exit" id="exit-btn" >
-                            <svg className="cross" onClick={() => setIsVisible(false)} xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968" >
+                        <li className="exit" id="exit-btn" onClick={() => setIsVisible(false)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48.968" height="48.968" viewBox="0 0 48.968 48.968" >
                                 <g transform="translate(-378.092 -80.939)">
-                                    <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#000" stroke-width="3"/>
-                                    <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#000" stroke-width="3"/>
+                                    <path id="Path_21" data-name="Path 21" d="M383,82l-46.847,46.847" transform="translate(43)" fill="none" stroke="#000" strokeWidth="3"/>
+                                    <path id="Path_22" data-name="Path 22" d="M336.153,82l46.673,46.673" transform="translate(43)" fill="none" stroke="#000" strokeWidth="3"/>
                                 </g>
                             </svg>
                         </li>

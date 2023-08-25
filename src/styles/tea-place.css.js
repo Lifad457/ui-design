@@ -7,8 +7,9 @@ export const StyledHeader = styled.header`
     justify-content: space-between;
     padding: 1em;
 
-    .cross {
+    .exit svg {
         width: 1em;
+        margin-right: 1.9em;
     }
     .logo {
         color: #47946E;
@@ -31,18 +32,23 @@ export const StyledHeader = styled.header`
         transform: translateX(0%);
         transition: transform .3s;
 
-        ${props => !props.visible && css`
+        ${props => !props.$visible && css`
             transform: translateX(100%);
         `};
     }
     li {
         list-style: none;
-        margin-right: 1.9em;
         padding-top: 0.5em;
+
+        &:not(.exit):hover {
+            background-color: #77DFC5;
+        }
     }
     li a {
+        font-size: 1.3em;
         color: black;
         font-weight: bold;
+        margin-right: 1.9em;
     }
 `
 export const StyledContentWrapper = styled.div`
