@@ -1,6 +1,7 @@
 import GlobalStyle from "../styles/global-tea-place.css";
 import {
     StyledContentWrapper,
+    StyledFern,
     StyledHeader,
     StyledMenuBtn
 } from '../styles/tea-place.css'
@@ -14,7 +15,7 @@ function TeaPLace() {
             <GlobalStyle />
 
             <div className="left-col"></div>
-            <div className="fern"></div>
+            <StyledFern></StyledFern>
             <StyledHeader $visible={isVisible}>
                 <a href="#" className="logo">TeaPlace</a>
                 <nav>
@@ -44,7 +45,7 @@ function TeaPLace() {
                     
                     <div className="btn-container">
                         <a href="#" className="cta">Browse our Tea</a>
-                        <a href="#" className="cta outline">Browse our Tea</a>
+                        <a href="#" className="cta outline">Buy Now</a>
                     </div>
                 </main>
                 
