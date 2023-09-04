@@ -9,16 +9,15 @@ export const StyledHeader = styled.header`
 
     .exit svg {
         width: 1em;
-        margin-right: 1.9em;
+        right: 2.5em;
         cursor: pointer;
+        margin-right: 1.5em;
     }
     .logo {
         font-size: 1.2em;
     }
-    nav {
-        text-align: end;
-    }
     ul {
+        text-align: end;
         position: fixed;
         top: 0;
         right: 0;
@@ -28,6 +27,7 @@ export const StyledHeader = styled.header`
         margin: 0;
         padding: 0;
         z-index: 1;
+
         transform: translateX(0%);
         transition: transform .3s;
 
@@ -39,15 +39,36 @@ export const StyledHeader = styled.header`
         list-style: none;
         padding-top: 0.8em;
 
-        &:not(.exit):hover {
-            background-color: #77DFC5;
-        }
     }
     li a {
         font-size: 1.3em;
         color: black;
         font-weight: bold;
-        margin-right: 1.9em;
+        margin-right: 1em;
+    }
+
+    .active {
+        color: #217C4f;
+    }
+
+    @media (min-width: 600px) {
+        .exit svg {
+            display: none;
+        }
+        ul {
+            display: flex;
+            background: none;
+            height: unset;
+            width: unset;
+            position: unset;
+            text-transform: uppercase;
+
+            transform: translateX(0%);
+        }
+        li a {
+            font-size: .9em;
+            padding: 0 .5rem;
+        }
     }
 `
 export const StyledContentWrapper = styled.div`
@@ -108,10 +129,66 @@ export const StyledContentWrapper = styled.div`
         right: -1%;
         bottom: -20%;
     }
+
+    @media (min-width: 600px) {
+        h1 {
+        font-size: 2.5em;
+        }
+        p {
+            font-size: 1em;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+        }
+        .cta {
+            padding: .7em 1.2em;
+        }
+        .outline {
+            margin-left: 1em;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        display: flex;
+
+        main {
+            text-align: left;
+            width: 90%;
+            margin-left: 2em;
+        }
+        p {
+            width: 100%;
+        }
+        .btn-container {
+            justify-content: left;
+        }
+        h1:before {
+            width: 10%;
+            left: 0;
+        }
+        .plant-container {
+            position: unset;
+            width: auto;
+            height: auto;
+            display: grid;
+            place-content: center;
+            margin-top: 4em;
+            margin-right: 2em;
+        }
+        .plant {
+            position: unset;
+            width: 90%;
+        }
+    }
 `
 export const StyledMenuBtn = styled(MenuButton)`
     width: 1.5em;
     cursor: pointer;
+
+    @media (min-width: 600px) {
+        display: none;
+    }
 `
 export const StyledFern = styled.div`
     background: url(${fern}) no-repeat;
@@ -122,4 +199,12 @@ export const StyledFern = styled.div`
     left: 0;
     z-index: -1;
     opacity: 0.1;
+`
+export const StyledLeftCol = styled.div`
+    width: 60%;
+    background: #AADFC5;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
 `

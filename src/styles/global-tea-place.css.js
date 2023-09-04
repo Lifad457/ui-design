@@ -20,6 +20,13 @@ const GlobalStyle  = createGlobalStyle`
         }
         background: #AADFC5;
         height: 100vh;
+
+        @media (min-width: 600px) {
+            font-size: 18px;
+        }
+        @media (min-width: 1000px) {
+            background: white;
+        }
     }
 
 `

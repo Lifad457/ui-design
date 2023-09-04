@@ -3,7 +3,8 @@ import {
     StyledContentWrapper,
     StyledFern,
     StyledHeader,
-    StyledMenuBtn
+    StyledMenuBtn,
+    StyledLeftCol
 } from '../styles/tea-place.css'
 import plant from '../assets/images/plant.png'
 import { useState } from "react";
@@ -14,7 +15,7 @@ function TeaPLace() {
         <div>
             <GlobalStyle />
 
-            <div className="left-col"></div>
+            <StyledLeftCol className="left-col"></StyledLeftCol>
             <StyledFern></StyledFern>
             <StyledHeader $visible={isVisible}>
                 <a href="#" className="logo">TeaPlace</a>
@@ -30,7 +31,7 @@ function TeaPLace() {
                                 </g>
                             </svg>
                         </li>
-                        <li className="active"><a href="#">Home</a></li>
+                        <li><a className="active" href="#">Home</a></li>
                         <li><a href="#">Browse</a></li>
                         <li><a href="#">Cart</a></li>
                         <li><a href="#">Contact</a></li>
