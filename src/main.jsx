@@ -11,12 +11,14 @@ import App from './pages/App.jsx'
 import NotFound from './pages/NotFound.jsx'
 import TastyBites from './pages/TastyBites.jsx'
 import TeaPLace from './pages/TeaPlace.jsx'
+import Gradient from './pages/Gradient.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
     <Route index element={<App />} />
     <Route element={<TastyBites />} path='tasty-bites' />
     <Route element={<TeaPLace />} path='tea-place' />
+    <Route element={<Gradient />} path='gradient' />
 
     <Route path="*" element={<NotFound />} />
   </Route>

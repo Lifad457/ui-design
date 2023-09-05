@@ -27,6 +27,9 @@ function App() {
           <StyledLink to='/tea-place' relative='path'>
             Tea Place
           </StyledLink>
+          <StyledLink to='/gradient' relative='path'>
+            Gradient
+          </StyledLink>
         </StyledDivLinks>
       </StyledContainer>
     </>
