@@ -30,6 +30,9 @@ function App() {
           <StyledLink to='/gradient' relative='path'>
             Gradient
           </StyledLink>
+          <StyledLink to='/forms' relative='path'>
+            Forms
+          </StyledLink>
         </StyledDivLinks>
       </StyledContainer>
     </>
