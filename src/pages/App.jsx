@@ -33,6 +33,9 @@ function App() {
           <StyledLink to='/forms' relative='path'>
             Forms
           </StyledLink>
+          <StyledLink to='/ui-animation' relative='path'>
+            UI Animation
+          </StyledLink>
         </StyledDivLinks>
       </StyledContainer>
     </>

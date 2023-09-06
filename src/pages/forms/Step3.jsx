@@ -36,29 +36,21 @@ function Step3() {
 
             <Main>
                 <LeftCol>
-                    <h2>Account Setup</h2>
-
-                    <label htmlFor="fname">First Name</label>
-                    <input 
-                        type="text" 
-                        id="fname" 
-                        name="fname" 
-                        className="error-field" />
-                    <p className="error">Sorry, this field is required.</p>
+                    <h2>Confirmation</h2>
                     
-                    <label htmlFor="lname">Last Name</label>
-                    <input 
-                        type="text" 
-                        id="lname" 
-                        name="lname" />
+                    <label htmlFor="tos" className="mt-extra">Terms of Service</label>
+                    <textarea id="tos" className="extra-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
                     
-                    <label htmlFor="email">Email Address</label>
-                    <input 
-                        type="text" 
-                        id="email" 
-                        name="email" />
-
-                    <a href="forms" className="cta">Next</a>
+                    <input type="checkbox" name="cb" id="cb" />
+                    <label htmlFor="cb" id="checkbox">
+                        <svg viewBox="0 0 100 100">
+                            <path className="box" d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"/>
+                            <polyline className="check" points="25.5,53.5 39.5,67.5 72.5,34.5 "/>
+                        </svg>
+                        <span className="tos-span">I agree to the Terms of Service</span>
+                    </label>
+                    
+                    <a href="forms" className="cta">Complete Signup</a>
                 </LeftCol>
                 <RightCol>
                     <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>

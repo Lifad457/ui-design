@@ -15,6 +15,7 @@ import Gradient from './pages/Gradient.jsx'
 import Forms from './pages/forms/Forms.jsx'
 import Step2 from './pages/forms/Step2.jsx'
 import Step3 from './pages/forms/Step3.jsx'
+import UIAnimation from './pages/UIAnimation.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -25,6 +26,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route element={<Forms />} path='forms' />
     <Route element={<Step2 />} path='step2' />
     <Route element={<Step3 />} path='step3' />
+    <Route element={<UIAnimation />} path='ui-animation' />
 
     <Route path="*" element={<NotFound />} />
   </Route>

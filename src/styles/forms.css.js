@@ -121,14 +121,21 @@ export const LeftCol = styled.div`
         border-radius: .2em;
     }
 
-    /* input[type=radio] + label {
+    /* input[type=checkbox] + label {
+        display:inline-block;
+        margin: 0;
+        margin-right: 3em;
+        padding: .8em;
+        cursor:pointer;
+    }
+     input[type=radio] + label {
         display:inline-block;
         margin: 0;
         margin-right: 3em;
         padding: .8em;
         cursor:pointer;
     } */
-    
+        
     input[type="radio"] {
         appearance: none;
         -webkit-appearance: none;
@@ -165,6 +172,55 @@ export const LeftCol = styled.div`
 
     .mt-extra {
         margin-top: 2em;
+    }
+
+    .extra-height {
+        min-height: 150px;
+    }
+
+
+
+    input[type=checkbox] {
+        display: none;
+        pointer-events: none;
+    }
+
+    input[type=checkbox] + label {
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: auto 3fr;
+    }
+
+    input[type=checkbox]:checked + label .check {
+        stroke-dashoffset: 0;
+    }
+
+    svg {
+        width: 2em;
+        stroke: #1A004E;
+        stroke-width: 5;
+        fill: white;
+    }
+
+    .box {
+        stroke-dasharray: 320;
+        stroke-dashoffset: 0;
+        fill: white;
+        transition: stroke-dashoffset .3s linear;
+    }
+
+    .check {
+        stroke-dasharray: 70;
+        stroke-dashoffset: 70;
+        fill: none;
+        transition: stroke-dashoffset .3s linear;
+    }
+
+    .tos-span {
+        padding-top: .4em;
+        margin-left: .5em;
+        font-weight: normal;
+        color: #1A004E;
     }
 
     @media screen and (min-width: 650px) {
