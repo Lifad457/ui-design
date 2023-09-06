@@ -3,8 +3,8 @@ import {
     Progress, 
     RightCol, 
     Wraper,
-    Main } from "../../styles/forms/step2.css";
-import GlobalStyle from "../../styles/forms/global-forms.css";
+    Main } from "../../styles/forms.css";
+import GlobalStyle from "../../styles/global-forms.css";
 
 function Step2() {
     return (

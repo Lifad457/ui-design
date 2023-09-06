@@ -58,6 +58,16 @@ export const Main = styled.main`
     margin-top: 2em;
     margin-bottom: 2em;
     
+    @media screen and (min-width: 650px) {
+        display: flex;
+        padding: 2em;
+    }
+
+    @media screen and (min-width: 900px) {
+        padding: 2em;
+        width: 900px;
+        margin: 2em auto;
+    }
 `
 export const LeftCol = styled.div`
     h2 {
@@ -82,6 +92,33 @@ export const LeftCol = styled.div`
         font-weight: bold;
         margin-top: 1.5em;
         margin-bottom: .5em;
+    }
+
+    input[type=text].error-field {
+        border: 3px solid #FFB3B3;
+    }
+
+    .error {
+        background: #FFB3B3;
+        display: inline-block;
+        padding: .3em .5em;
+        font-size: .85em;
+        font-weight: bold;
+        margin-top: -.1em;
+    }
+
+    .cta {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background: #8040FF;
+        margin-top: 1.5em;
+        font-weight: bold;
+        font-size: 1.2em;
+        border-radius: .2em;
     }
 
     /* input[type=radio] + label {
@@ -130,18 +167,21 @@ export const LeftCol = styled.div`
         margin-top: 2em;
     }
 
-    .cta {
-        display: block;
-        width: 100%;
-        padding: 1em;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        background: #8040FF;
-        margin-top: 1.5em;
-        font-weight: bold;
-        font-size: 1.2em;
-        border-radius: .2em;
+    @media screen and (min-width: 650px) {
+        flex: 0 0 65%;
+        margin-right: 2em;
+
+        .cta {
+            width: unset;
+            float: right;
+            padding: 1em 4em;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        h2 {
+            font-size: 1.7em;
+        }
     }
 `
 export const RightCol = styled.div`
