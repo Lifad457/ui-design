@@ -3,10 +3,10 @@ import {
     Progress, 
     RightCol, 
     Wraper,
-    Main } from "../../styles/forms/forms.css";
+    Main } from "../../styles/forms/step2.css";
 import GlobalStyle from "../../styles/forms/global-forms.css";
 
-function Forms() {
+function Step2() {
     return (
         <Wraper>
             <GlobalStyle />
@@ -14,13 +14,13 @@ function Forms() {
             <h1>Become a Member!</h1>
 
             <Progress>
-                <li className="current">
+                <li>
                     <a href="forms">
                        <div className="circle">1</div>
                        <span>Account</span> 
                     </a>
                 </li>
-                <li>
+                <li className="current">
                     <a href="step2">
                        <div className="circle">2</div>
                        <span>Details</span> 
@@ -36,29 +36,29 @@ function Forms() {
 
             <Main>
                 <LeftCol>
-                    <h2>Account Setup</h2>
-
-                    <label htmlFor="fname">First Name</label>
-                    <input 
-                        type="text" 
-                        id="fname" 
-                        name="fname" 
-                        className="error-field" />
-                    <p className="error">Sorry, this field is required.</p>
+                    <h2>Details</h2>
                     
-                    <label htmlFor="lname">Last Name</label>
-                    <input 
-                        type="text" 
-                        id="lname" 
-                        name="lname" />
+                    <label htmlFor="loc">Country</label>
+                    <select id="loc">
+                        <option value="US">United States</option>
+                        <option value="US">United States</option>
+                        <option value="US">United States</option>
+                        <option value="US">United States</option>
+                        <option value="US">United States</option>
+                    </select>
                     
-                    <label htmlFor="email">Email Address</label>
-                    <input 
-                        type="text" 
-                        id="email" 
-                        name="email" />
-
-                    <a href="step2" className="cta">Next</a>
+                    <label>Gender</label>
+                    
+                    <input type="radio" id="male" name="gender" checked />
+                    <label htmlFor="male" className="left-label">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" checked />
+                    <label htmlFor="female" className="left-label">Female</label>
+                    
+                    <label htmlFor="bio" className="mt-extra">Biography</label>
+                    <textarea></textarea>
+                    
+                    <a href="step3" className="cta">Next</a>
                 </LeftCol>
                 <RightCol>
                     <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -70,4 +70,4 @@ function Forms() {
     )
 }
 
-export default Forms
+export default Step2

@@ -13,6 +13,8 @@ import TastyBites from './pages/TastyBites.jsx'
 import TeaPLace from './pages/TeaPlace.jsx'
 import Gradient from './pages/Gradient.jsx'
 import Forms from './pages/forms/Forms.jsx'
+import Step2 from './pages/forms/Step2.jsx'
+import Step3 from './pages/forms/Step3.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -21,6 +23,8 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route element={<TeaPLace />} path='tea-place' />
     <Route element={<Gradient />} path='gradient' />
     <Route element={<Forms />} path='forms' />
+    <Route element={<Step2 />} path='step2' />
+    <Route element={<Step3 />} path='step3' />
 
     <Route path="*" element={<NotFound />} />
   </Route>

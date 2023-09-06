@@ -57,6 +57,7 @@ export const Main = styled.main`
     text-align: left;
     margin-top: 2em;
     margin-bottom: 2em;
+    
 `
 export const LeftCol = styled.div`
     h2 {
@@ -83,17 +84,50 @@ export const LeftCol = styled.div`
         margin-bottom: .5em;
     }
 
-    input[type=text].error-field {
-        border: 3px solid #FFB3B3;
+    /* input[type=radio] + label {
+        display:inline-block;
+        margin: 0;
+        margin-right: 3em;
+        padding: .8em;
+        cursor:pointer;
+    } */
+    
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        display: inline-block;
+        position: relative;
+        border: 2px solid #C6C6C6;
+        color: #666;
+        top: 10px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-right: 7px;
+        outline: none;
     }
 
-    .error {
-        background: #FFB3B3;
-        display: inline-block;
-        padding: .3em .5em;
-        font-size: .85em;
-        font-weight: bold;
-        margin-top: -.1em;
+    input[type="radio"]:checked::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background: #8040FF;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+
+    .left-label {
+        display: unset;
+        font-weight: normal;
+        margin-right: 2em;
+    }
+
+    .mt-extra {
+        margin-top: 2em;
     }
 
     .cta {
@@ -111,5 +145,19 @@ export const LeftCol = styled.div`
     }
 `
 export const RightCol = styled.div`
+    margin-top: 2em;
+    line-height: 1.5em;
+    color: #1B1820;
 
+    @media screen and (min-width: 650px) {
+        margin: 0;
+        margin-top: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 900px) {
+        margin-top: 6.3em;
+    }
 `

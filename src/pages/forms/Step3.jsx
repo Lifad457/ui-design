@@ -3,10 +3,10 @@ import {
     Progress, 
     RightCol, 
     Wraper,
-    Main } from "../../styles/forms/forms.css";
+    Main } from "../../styles/forms/step3.css";
 import GlobalStyle from "../../styles/forms/global-forms.css";
 
-function Forms() {
+function Step3() {
     return (
         <Wraper>
             <GlobalStyle />
@@ -14,7 +14,7 @@ function Forms() {
             <h1>Become a Member!</h1>
 
             <Progress>
-                <li className="current">
+                <li>
                     <a href="forms">
                        <div className="circle">1</div>
                        <span>Account</span> 
@@ -26,7 +26,7 @@ function Forms() {
                        <span>Details</span> 
                     </a>
                 </li>
-                <li>
+                <li className="current">
                     <a href="step3">
                        <div className="circle">3</div>
                        <span>Confirmation</span> 
@@ -58,7 +58,7 @@ function Forms() {
                         id="email" 
                         name="email" />
 
-                    <a href="step2" className="cta">Next</a>
+                    <a href="forms" className="cta">Next</a>
                 </LeftCol>
                 <RightCol>
                     <p><strong>Note:</strong> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -70,4 +70,4 @@ function Forms() {
     )
 }
 
-export default Forms
+export default Step3
