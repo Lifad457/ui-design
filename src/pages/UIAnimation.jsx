@@ -1,5 +1,5 @@
 import person from "../assets/images/person.jpg"
-import Phone from "../components/Phone"
+import phone from "../assets/images/phone.svg"
 import GlobalStyle from "../styles/global-ui-animation"
 import { Wrapper, Col } from "../styles/ui-animation.css"
 
@@ -7,7 +7,7 @@ function UIAnimation() {
     return (
         <Wrapper>
             <GlobalStyle />
-            <Phone className="phone" />
+            <img src={phone} className="phone" />
             <Col className="left">
                 <div className="inner-content">
                     <p className="subheading">The most comprehensive</p>

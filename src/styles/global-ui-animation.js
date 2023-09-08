@@ -20,5 +20,28 @@ const GlobalStyle = createGlobalStyle`
         font-weight: normal;
         text-align: center;
     }
+
+    @media (min-width: 400px) {
+        body {
+            background-position: 0 30%;
+            background-size: 130%;
+        }
+    }
+
+    @media (min-width: 850px) {
+        body {
+            text-align: left;
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            background-position: 0 80%;
+            background-size: 100%;
+        }
+    }
+    @media (min-width: 1180px) {
+        body {
+            font-size: 17px;
+        }
+    }
 `
 export default GlobalStyle
