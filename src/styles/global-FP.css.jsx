@@ -12,7 +12,22 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        
+        background: #D8EACB;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    img {
+        width: 100%;
     }
 `
 export default GlobalStyle
