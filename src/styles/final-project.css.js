@@ -149,6 +149,17 @@ export const FeatureContainer = styled.div`
     }
 `
 export const LastContainer = styled(Wrapper)`
+    position: relative;
+
+    .fern {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 80%;
+        opacity: .1;
+    }
+
     .main-quote {
         font-family: 'Playfair Display', serif;
         font-size: 2.2em;
@@ -165,5 +176,24 @@ export const LastContainer = styled(Wrapper)`
         font-size: .9em;
         line-height: 1.8;
     }
-    
+    .testimonials {
+        margin: 0 auto;
+    }
+    .testimonials li {
+        display: flex;
+        margin: 2em;
+    }
+    .testimonials img {
+        width: 150px;
+        height: 150px;
+        border-radius: 2em;
+    }
+    .test-desc {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        padding: 1em;
+    }
+    .test-left p {
+        margin: 0;
+    }
 `
