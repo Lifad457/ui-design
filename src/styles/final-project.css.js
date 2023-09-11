@@ -9,6 +9,10 @@ export const ForrestHero = styled.div`
 export const Wrapper = styled.div`
     padding: .5em;
     text-align: center;
+
+    @media screen and (min-width: 900px){
+        text-align: left;
+    }
 `
 export const NoPadding = styled(Wrapper)`
     padding: 0;
@@ -59,6 +63,47 @@ export const NoPadding = styled(Wrapper)`
             opacity: 1;
             transform: translateX(0);
         `};
+    }
+
+    @media (min-width: 550px) {
+        .menu, .exit {
+            display: none;
+        }
+        
+        header {
+            padding: 1em;
+        }
+        
+        ul.nav {
+            visibility: unset;
+            opacity: 1;
+            background: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            position: unset;
+            height: auto;
+        }
+        
+        ul.nav li a {
+            font-size: .9em;
+            padding: 0 1em;
+            font-weight: normal;
+            color: black;
+        }
+
+        ul.nav li:last-child a {
+            padding-right: 0;
+        }
+
+        ul.nav .active a {
+            font-weight: bold;
+        }
+
+        ul.nav .res a {
+            color: #72A84A;
+            font-weight: bold;
+        }
     }
 `
 export const Hero = styled(Wrapper)`
@@ -125,6 +170,39 @@ export const Hero = styled(Wrapper)`
         width: 10px;
     }
 
+    @media screen and (min-width: 550px){
+        ul.featured-cabins {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 2em;
+        }
+    }
+
+    @media screen and (min-width: 900px){
+        padding: 8em 4em;
+
+        .flex {
+            display: flex;
+        }
+        .main-copy {
+            width: 40%;
+        }
+        
+        p.subtitle {
+            margin: 0 0 1em;
+            padding: 0;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-top: 0;
+        }
+        
+        ul.featured-cabins {
+            width: 70%;
+        }
+    }
 `
 export const FeatureContainer = styled.div`
     background: #1A1A1A;
@@ -147,6 +225,15 @@ export const FeatureContainer = styled.div`
     li {
         padding: .8em;
     }
+
+    @media screen and (min-width: 550px){
+        ul.features {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 2em;
+        }
+    }
 `
 export const LastContainer = styled(Wrapper)`
     position: relative;
@@ -167,7 +254,7 @@ export const LastContainer = styled(Wrapper)`
         margin-bottom: .5em;
     }
 
-    cite {
+    .main-cite {
         margin-bottom: 3em;
         display: block;
     }
@@ -196,4 +283,39 @@ export const LastContainer = styled(Wrapper)`
     .test-left p {
         margin: 0;
     }
+
+    @media screen and (min-width: 550px){
+        .testimonials li {
+            display: block;
+            margin: 5em 0;
+        }
+
+        ul.testimonials {
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-gap: 1em;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        padding: 0 4em;
+
+        .main-quote {
+            font-size: 3em;
+            text-align: center;
+        }
+        
+        .main-cite {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .fern {
+            width: 40%;
+        }
+    }
+`
+export const SubHero = styled.div`
+
 `

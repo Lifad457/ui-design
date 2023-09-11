@@ -18,6 +18,7 @@ import {
     FeatureContainer} from "../../styles/final-project.css";
 import GlobalStyle from "../../styles/global-FP.css";
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Index() {
     const [navMenu, setNavMenu] = useState(false);
@@ -29,7 +30,7 @@ function Index() {
             <ForrestHero>
                 <NoPadding $navMenu={navMenu}>
                     <header>
-                        <a href="index.html" className="logo">scenic.forests</a>
+                        <Link to="." end className="logo">scenic.forests</Link>
                         
                         <nav>
                             <img src={menu} 
@@ -43,7 +44,7 @@ function Index() {
                                     <a href="#" onClick={() => setNavMenu(false)}><img src={exit} /></a>
                                 </li>
                                 <li className="active"><a href="final-project">Home</a></li>
-                                <li><a href="#">Cabins</a></li>
+                                <li><Link to="cabins">Cabins</Link></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li className="res"><a href="#">Reservations</a></li>
                             </ul>
@@ -61,7 +62,7 @@ function Index() {
                                 <span>Await you</span>
                             </h1>
                             
-                            <a href="cabins.html" className="cta">All Rentals</a>
+                            <Link to="cabins" className="cta">All Rentals</Link>
                         </div>
                         <ul className="featured-cabins">
                             <li>

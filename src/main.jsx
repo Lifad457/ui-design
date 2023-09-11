@@ -17,6 +17,7 @@ import Step2 from './pages/forms/Step2.jsx'
 import Step3 from './pages/forms/Step3.jsx'
 import UIAnimation from './pages/UIAnimation.jsx'
 import Index from './pages/final-project/Index.jsx'
+import Cabins from './pages/final-project/Cabins.jsx'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Layout />}>
@@ -28,8 +29,9 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route element={<Step2 />} path='step2' />
     <Route element={<Step3 />} path='step3' />
     <Route element={<UIAnimation />} path='ui-animation' />
-    <Route element={<Index />} path='final-project' >
-
+    <Route path='final-project' >
+      <Route index element={<Index />} />
+      <Route element={<Cabins />} path='cabins' />
     </Route>
 
     <Route path="*" element={<NotFound />} />
