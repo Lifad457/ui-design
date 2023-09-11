@@ -43,7 +43,7 @@ function Index() {
                                 <li className="exit" id="exit-btn">
                                     <a href="#" onClick={() => setNavMenu(false)}><img src={exit} /></a>
                                 </li>
-                                <li className="active"><a href="final-project">Home</a></li>
+                                <li className="active"><Link to=".">Home</Link></li>
                                 <li><Link to="cabins">Cabins</Link></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li className="res"><a href="#">Reservations</a></li>

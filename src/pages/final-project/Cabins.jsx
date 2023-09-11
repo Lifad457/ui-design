@@ -21,7 +21,7 @@ function Cabins() {
             <SubHero>
                 <NoPadding $navMenu={navMenu}>
                     <header>
-                        <Link to="/final-project" className="logo">scenic.forests</Link>
+                        <Link to=".." className="logo">scenic.forests</Link>
                         
                         <nav>
                             <img src={menu} 
@@ -34,8 +34,8 @@ function Cabins() {
                                 <li className="exit" id="exit-btn">
                                     <a href="#" onClick={() => setNavMenu(false)}><img src={exit} /></a>
                                 </li>
-                                <li className="active"><a href="final-project">Home</a></li>
-                                <li><a href="#">Cabins</a></li>
+                                <li className="active"><Link to="..">Home</Link></li>
+                                <li><Link to=".">Cabins</Link></li>
                                 <li><a href="#">FAQ</a></li>
                                 <li className="res"><a href="#">Reservations</a></li>
                             </ul>
@@ -48,8 +48,8 @@ function Cabins() {
                     <div className="main-copy">
                         
                         <ul className="breadcrumbs">
-                            <li><Link to="/final-project">Home</Link></li>
-                            <li><Link to="cabins"> Our Cabins</Link></li>
+                            <li><Link to="..">Home</Link></li>
+                            <li><Link to="."> Our Cabins</Link></li>
                         </ul>
                         
                         <h1>
