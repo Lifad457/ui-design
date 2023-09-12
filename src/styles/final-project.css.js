@@ -1,5 +1,6 @@
 import styled,  {css} from "styled-components"
 import forest from "../assets/images/final-project/forest.jpg"
+import forest2 from "../assets/images/final-project/forest-bg-2.jpg"
 
 export const ForrestHero = styled.div`
     background: url(${forest});
@@ -317,5 +318,63 @@ export const LastContainer = styled(Wrapper)`
     }
 `
 export const SubHero = styled.div`
+    background: url(${forest2});
+    background-size: cover;
+    height: 70vh;
 
+    .bread-wrapper {
+        display: grid;
+        justify-content: center;
+        margin: 3em 0 0;
+    }
+
+    ul.breadcrumbs {
+        display: flex;
+        margin-bottom: .5em;
+    }
+
+    ul.breadcrumbs li a {
+        color: black;
+        margin-right: .5em;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .sub-desc {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    ul.featured-cabins {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+        width: 100%;
+        place-content: center;
+        margin-top: 4em;
+    }
+
+    .cabin-cta span {
+        color: black;
+    }
+
+    .cabin-cta:after {
+        background: black;
+    }
+
+    @media (min-width: 900px) {
+        ul.featured-cabins {
+            place-content: flex-start;
+        }
+        
+        .bread-wrapper {
+            display: unset;
+        }
+        
+        .sub-desc {
+            width: 100%;
+        }
+    }
 `

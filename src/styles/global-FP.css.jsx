@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: #D8EACB;
+        background: ${props => props.background};
         font-family: 'Montserrat', sans-serif;
     }
 

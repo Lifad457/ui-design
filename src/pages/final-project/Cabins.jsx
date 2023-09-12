@@ -1,7 +1,7 @@
 import cabin1 from "../../assets/images/final-project/cabin1.jpg"
 import cabin2 from "../../assets/images/final-project/cabin2.jpg"
 import cabin3 from "../../assets/images/final-project/cabin3.jpg"
-import arrows from "../../assets/images/final-project/arrows.svg"
+import arrows from "../../assets/images/final-project/arrows-black.svg"
 import menu from "../../assets/images/final-project/menu.svg"
 import exit from "../../assets/images/final-project/exit.svg"
 import GlobalStyle from "../../styles/global-FP.css"
@@ -16,7 +16,7 @@ function Cabins() {
 
     return (
         <>
-            <GlobalStyle />
+            <GlobalStyle background="#ffffff" />
             
             <SubHero>
                 <NoPadding $navMenu={navMenu}>
@@ -44,19 +44,21 @@ function Cabins() {
                 </NoPadding>
                 
                 <Hero>
-
+                    
                     <div className="main-copy">
                         
-                        <ul className="breadcrumbs">
-                            <li><Link to="..">Home</Link></li>
-                            <li><Link to="."> Our Cabins</Link></li>
-                        </ul>
+                        <div className="bread-wrapper">
+                            <ul className="breadcrumbs">
+                                <li><Link to="..">Home</Link></li>
+                                <li>&gt; Our Cabins</li>
+                            </ul>
+                        </div>
                         
                         <h1>
                             <span>Our Cabins</span>
                         </h1>
                         
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+                        <p className="sub-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
 
                     </div>
 
@@ -94,8 +96,7 @@ function Cabins() {
                                 <img src={arrows} />
                             </a>
                         </li>
-                    </ul>
-                    <ul className="featured-cabins">
+
                         <li>
                             <a href="#"><img src={cabin1} className="cabin-img" /></a>
                             
@@ -129,8 +130,7 @@ function Cabins() {
                                 <img src={arrows} />
                             </a>
                         </li>
-                    </ul>
-                    <ul className="featured-cabins">
+
                         <li>
                             <a href="#"><img src={cabin1} className="cabin-img" /></a>
                             

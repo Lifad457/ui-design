@@ -25,7 +25,7 @@ function Index() {
 
     return (
         <>
-            <GlobalStyle />
+            <GlobalStyle background="#D8EACB" />
             
             <ForrestHero>
                 <NoPadding $navMenu={navMenu}>
